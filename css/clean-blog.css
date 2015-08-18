@@ -395,3 +395,38 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+.social {
+  margin: 20px 0 0;
+}
+.social a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .social a {
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+}
+.social a:hover,
+.social a:focus {
+  color: white;
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+  text-decoration: none;
+}
+.social .disabled > a,
+.social .disabled > a:hover,
+.social .disabled > a:focus,
+.social .disabled > span {
+  color: #808080;
+  background-color: #404040;
+  cursor: not-allowed;
+}
